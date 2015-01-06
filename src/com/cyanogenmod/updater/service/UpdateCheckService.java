@@ -307,6 +307,7 @@ public class UpdateCheckService extends IntentService
     @Override
     public void onErrorResponse(VolleyError volleyError) {
         VolleyLog.e("Error: ", volleyError.getMessage());
+        Log.e(TAG, "onErrorResponse: " + volleyError.toString());
     }
 
     @Override
